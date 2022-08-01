@@ -31,7 +31,7 @@ local tweenInfo = TweenInfo.new(4, Enum.EasingStyle.Linear, Enum.EasingDirection
 local tween = TweenService:Create(loadingRing, tweenInfo, {Rotation = 30})
 tween:Play()
  
-wait(5)  -- Force screen to appear for a minimum number of seconds
+wait(3)  -- Force screen to appear for a minimum number of seconds
 if not game:IsLoaded() then
 	game.Loaded:Wait()
 end

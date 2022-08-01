@@ -28,10 +28,10 @@ loadingRing.Parent = screenGui
 ReplicatedFirst:RemoveDefaultLoadingScreen()
  
 local tweenInfo = TweenInfo.new(4, Enum.EasingStyle.Linear, Enum.EasingDirection.In, -1)
-local tween = TweenService:Create(loadingRing, tweenInfo, {Rotation = 50})
+local tween = TweenService:Create(loadingRing, tweenInfo, {Rotation = 70})
 tween:Play()
  
-wait(4)  -- Force screen to appear for a minimum number of seconds
+wait(5)  -- Force screen to appear for a minimum number of seconds
 if not game:IsLoaded() then
 	game.Loaded:Wait()
 end
